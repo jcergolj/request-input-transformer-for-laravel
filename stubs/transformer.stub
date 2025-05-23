@@ -1,0 +1,22 @@
+<?php
+
+namespace DummyNamespace;
+
+use Jcergolj\RequestPreprocessor\PipelinedItem;
+
+class DummyClass
+{
+    /**
+     * Handle the transformation.
+     *
+     * @param  PipelinedItem  $item
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle(PipelinedItem $item, \Closure $next)
+    {
+        // TODO: modify $item->value as needed
+
+        return $next($item);
+    }
+}
