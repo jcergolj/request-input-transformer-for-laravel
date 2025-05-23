@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Foundation\Http\FormRequest;
+use Jcergolj\RequestPreprocessor\PipelinedItem;
+
+class DummyClass
+{
+    public function handle(FormRequest $request, \Closure $next)
+    {
+        // TODO: modify $item->value as needed
+
+        return $next($item);
+    }
+}

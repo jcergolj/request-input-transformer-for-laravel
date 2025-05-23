@@ -1,0 +1,15 @@
+<?php
+
+namespace DummyNamespace;
+
+use Jcergolj\RequestPreprocessor\PipelinedItem;
+
+class DummyClass
+{
+    public function handle(PipelinedItem $pipelineItem, \Closure $next): mixed
+    {
+        // TODO: modify $item->value as needed
+
+        return $next($pipelineItem);
+    }
+}

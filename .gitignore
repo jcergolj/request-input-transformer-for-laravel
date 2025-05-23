@@ -1,0 +1,5 @@
+.qodo
+/vendor
+/.phpunit.result.cache
+.phpunit-output.txt
+.phpunit.cache/test-results
